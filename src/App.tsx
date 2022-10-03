@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "./docs/logo.png"
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
               <Navbar.Brand href="/">
                 <img
                 className="site-logo"
-                  src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png"
+                  src={logo}
                   alt="Letterboxd - Your life in film"
                 />
               </Navbar.Brand>

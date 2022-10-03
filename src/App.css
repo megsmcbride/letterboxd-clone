@@ -1,18 +1,24 @@
+html {
+  background: rgb(32,40,48);
+  background: linear-gradient( rgba(32,40,48,1), rgba(20,27,28,1) 50% );
+  height: 100%;
+}
+
 .site-logo {
-  height: 70px;
+  height: 40px;
+  margin: 15px 60px 15px 0 ;
   width: auto;
 }
 
 .color-nav {
-  background-color: #202830;
+  background-color: #141b1c;
 }
 
 .site-header a {
   color: #909faf;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-
 }
