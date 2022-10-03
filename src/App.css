@@ -1,5 +1,5 @@
 .site-logo {
-  height: 72px;
+  height: 70px;
   width: auto;
 }
 
@@ -9,4 +9,10 @@
 
 .site-header a {
   color: #909faf;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+
 }

@@ -22,7 +22,7 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                  <NavDropdown title="USESRNAME" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Action
                     </NavDropdown.Item>
@@ -37,8 +37,11 @@ function App() {
                       Separated link
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Link</Nav.Link>
+                  <Nav.Link href="#home"><span>films</span></Nav.Link>
+                  <Nav.Link href="#link"><span>lists</span></Nav.Link>
+                  <Nav.Link href="#link"><span>members</span></Nav.Link>
+                  <Nav.Link href="#link"><span>journal</span></Nav.Link>
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
