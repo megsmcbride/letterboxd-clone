@@ -5,6 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./docs/logo.png"
+import { BsFillLightningChargeFill } from "react-icons/bs"
+
+import { IconContext } from "react-icons";
+
 
 function App() {
   return (
@@ -25,23 +29,46 @@ function App() {
                 <Nav className="me-auto">
                   <NavDropdown title="USESRNAME" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
-                      Action
+                      Home
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
-                      Another action
+                      Profile
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">
-                      Something
+                      Films
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Diary
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Reviews
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Watchlist
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      List
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">
-                      Separated link
+                      settings
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      subscriptions
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      sign out
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#home"><span>films</span></Nav.Link>
-                  <Nav.Link href="#link"><span>lists</span></Nav.Link>
-                  <Nav.Link href="#link"><span>members</span></Nav.Link>
-                  <Nav.Link href="#link"><span>journal</span></Nav.Link>
+                  <Nav.Link href="/activity/">
+                  <IconContext.Provider value={{ size: '1.5rem'}}>
+                  <BsFillLightningChargeFill />
+                    </IconContext.Provider>
+                    </Nav.Link>
+                  <Nav.Link href="/films/"><span>films</span></Nav.Link>
+                  <Nav.Link href="/lists/"><span>lists</span></Nav.Link>
+                  <Nav.Link href="/members/"><span>members</span></Nav.Link>
+                  <Nav.Link href="/journal/"><span>journal</span></Nav.Link>
 
                 </Nav>
               </Navbar.Collapse>
