@@ -1,5 +1,5 @@
 import "../App.css";
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -12,17 +12,17 @@ import logo from "../docs/logo.png";
 function NavBar() {
   const [signIn, setSignIn] = useState(false);
 
-  function onSignIn() {
-    axios
-      .get(`https://api.letterboxd.com/api/v0/auth/token`, {
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Accept: "application/json",
-        },
-      })
-      .then((res) => {})
-      .catch((err) => console.log(err));
-  }
+  // function onSignIn() {
+  //   axios
+  //     .get(`https://api.letterboxd.com/api/v0/auth/token`, {
+  //       headers: {
+  //         "Content-Type": "application/x-www-form-urlencoded",
+  //         Accept: "application/json",
+  //       },
+  //     })
+  //     .then((res) => {})
+  //     .catch((err) => console.log(err));
+  // }
 
   return (
       <header className="site-header">
@@ -39,10 +39,18 @@ function NavBar() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 {signIn ? (
-                  <form>
-                    {" "}
+                  <form className="sign-in">
+                    <div className="fields">
+
+                    <section className="col">
                     <label>Username or Email</label>
-                    <input type="email"></input>{" "}
+                    <input type="email"></input>
+                    </section>
+                    <section className="col">
+                    <label>Password</label>
+                    <input type="password"></input>
+                    </section>
+                    </div>
                   </form>
                 ) : (
                   <Nav className="me-auto">
