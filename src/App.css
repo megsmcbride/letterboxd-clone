@@ -4,28 +4,3 @@ html {
   height: 100%;
 }
 
-.site-logo {
-  height: 40px;
-  margin: 15px 80px 15px 0 ;
-  width: auto;
-}
-
-.color-nav {
-  background-color: #141b1c;
-}
-
-.site-header a {
-  color: #909faf;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.15rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.nav-link.active {
-  color: white !important;
-}
-.nav-link:hover {
-  color: white !important;
-}
