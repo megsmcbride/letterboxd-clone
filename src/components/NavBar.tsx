@@ -4,6 +4,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../docs/logo.png";
 import { BsFillLightningChargeFill } from "react-icons/bs"
@@ -12,6 +13,10 @@ import { IconContext } from "react-icons";
 
 function NavBar() {
   const [signIn, setSignIn] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+
 
   // function onSignIn() {
   //   axios
@@ -50,12 +55,13 @@ function NavBar() {
                       </div>
                     <section className="col">
                     <label>Username or Email</label>
-                    <input type="email"></input>
+                    <input type="email" onChange={(e) => setEmail(e.target.value)}></input>
                     </section>
                     <section className="col">
                     <label>Password</label>
-                    <input type="password"></input>
+                    <input type="password" onChange={(e) => setPassword(e.target.value)}></input>
                     </section>
+                    <Button className="sign-in-button">Sign In</Button>
                     </div>
                   </form>
                 ) : (
