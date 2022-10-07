@@ -6,8 +6,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../docs/logo.png";
-// import { BsFillLightningChargeFill } from "react-icons/bs"
-// import { IconContext } from "react-icons";
+import { BsFillLightningChargeFill } from "react-icons/bs"
+import { RiCloseFill } from "react-icons/ri"
+import { IconContext } from "react-icons";
 
 function NavBar() {
   const [signIn, setSignIn] = useState(false);
@@ -41,7 +42,12 @@ function NavBar() {
                 {signIn ? (
                   <form className="sign-in">
                     <div className="fields">
+                      <div className="close">
 
+                    <IconContext.Provider value={{ size: '1.7rem', color: '#456'}}>
+                    <RiCloseFill onClick={() => setSignIn(false)}/>
+                    </IconContext.Provider>
+                      </div>
                     <section className="col">
                     <label>Username or Email</label>
                     <input type="email"></input>

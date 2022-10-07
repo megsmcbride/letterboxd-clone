@@ -35,6 +35,7 @@
 
 .col {
   color: #678;
+  font-size: 1.2rem;
   margin-left: 20px;
 }
 
@@ -50,4 +51,10 @@
 
 .col input:focus {
   background-color: white;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
 }
